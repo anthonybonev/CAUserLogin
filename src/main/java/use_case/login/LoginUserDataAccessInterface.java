@@ -7,6 +7,7 @@ import entity.User;
  */
 public interface LoginUserDataAccessInterface {
 
+
     /**
      * Checks if the given username exists.
      * @param username the username to look for
@@ -27,4 +28,5 @@ public interface LoginUserDataAccessInterface {
      */
     User get(String username);
 
+    void setCurrentUser(String name);
 }
